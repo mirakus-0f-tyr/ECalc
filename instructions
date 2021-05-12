@@ -1,0 +1,23 @@
+INSTRUCTIONS 
+
+- Enter the data for either one EPERM or two.  It doesn't matter which slot you use, if performing a single.
+
+- Use the spinner to select your configuration.
+
+- Enter your start and end dates.
+
+- Select your state/province and verify the shown background gamma value is correct.  If you wish to change this value for any reason, click "Unlock Gamma" checkbox and enter your chosen value.
+
+- Enter the elevation.
+
+- Click the "Calculate" button to see your results.
+
+USING SI UNITS
+You may view your results in BQ/m3 by clicking the checkbox for "Intl. Units" and also making sure to enter the appropriate SI values for Gamma and Elevation.
+
+This prototype version of the calculator does not perform robust error checking aside from verifying all needed data has been entered.  Please double check your results.
+
+Comments, suggestions, bugs:
+Please contact John through email at jdavis@radelec.com.
+
+Thank you for trying the calculator!

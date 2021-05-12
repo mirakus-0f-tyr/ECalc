@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/widget39"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<EditText
+	android:id="@+id/tedit_company"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:hint="Company Name"
+	android:textSize="18sp" />
+<EditText
+	android:id="@+id/tedit_technician"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:hint="Technician"
+	android:textSize="18sp" />
+<EditText
+	android:id="@+id/tedit_certno"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:hint="NRSB/NRPP #"
+	android:textSize="18sp" />
+<EditText
+	android:id="@+id/tedit_compaddr"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:hint="Address"
+	android:textSize="18sp" />
+<Button
+	android:id="@+id/button_saveCompInfo"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Save"
+	android:onClick="saveCompanyInfo" />
+</LinearLayout>
+

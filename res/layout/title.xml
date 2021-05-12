@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	android:id="@+id/widget63"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<Button
+	android:id="@+id/company_button"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Company Info"
+	android:onClick="launchCompany" />
+<Button
+	android:id="@+id/eperm_button"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="EPERM"
+	android:onClick="launchECalc" />
+<Button
+	android:id="@+id/recon_button"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Recon CRM" />
+<TextView
+	android:id="@+id/version_view"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Version: early development" />
+</TableLayout>
+
