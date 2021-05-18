@@ -17,11 +17,6 @@
 	android:layout_height="wrap_content"
 	android:text="EPERM"
 	android:onClick="launchECalc" />
-<Button
-	android:id="@+id/recon_button"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:text="Recon CRM" />
 <TextView
 	android:id="@+id/version_view"
 	android:layout_width="wrap_content"

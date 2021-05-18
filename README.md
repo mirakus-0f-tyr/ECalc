@@ -4,7 +4,7 @@ ECalc is an EPERM quick calculator for the Android operating system. The project
 
 Existing mobile options for making EPERM measurements are limited, so it's time to resurrect the project.
 
-This code was written for the purpose of learning to code for Android, not for providing an official EPERM product. There are bugs. It is *not* production ready in its current state. If you use this code, you're on your own. Verify your results with another calculator (such as the online calculator at <a href="https://www.radelec.com/qc">www.radelec.com/qc</a>) before providing official results.
+This code was written for the purpose of learning to program Android apps, not for providing an endorsed EPERM product. There are bugs. It is *not* production ready in its current state. If you use this code, you're on your own. Verify your results with another calculator (such as the online calculator at <a href="https://www.radelec.com/qc">www.radelec.com/qc</a>) before providing anything official.
 
 ### What Does it Do?
 
