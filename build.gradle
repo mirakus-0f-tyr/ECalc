@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        google()
+	jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+	jcenter()
+	maven { url 'https://jitpack.io' }
+    }
+}
+
+wrapper {
+    gradleVersion = '6.5'
+    distributionUrl = distributionUrl.replace("bin", "all")
+}

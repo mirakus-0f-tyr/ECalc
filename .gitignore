@@ -1,3 +1,5 @@
 *.sw*
-bin
-gen
+local.properties
+.gradle
+.idea
+ECalc/build
