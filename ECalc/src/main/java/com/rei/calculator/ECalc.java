@@ -355,16 +355,13 @@ public class ECalc extends Activity
 	// method converts difference in dates/times into a floating format expected by calculation code
 	double CalculateDuration()
 	{
-		// final result
-		double totalDuration;
-
 		// calendar objects used for getting our difference only
 		Calendar start = new GregorianCalendar(startYear, startMonth, startDay, startHour, startMinute);
 		Calendar end = new GregorianCalendar(endYear, endMonth, endDay, endHour, endMinute);
 
-		totalDuration = (end.getTimeInMillis() - start.getTimeInMillis()) / 1000 / 60 / 60 / 24;
-		
-		return totalDuration;
+		// get duration milliseconds and return in days
+		long calMillis = (end.getTimeInMillis() - start.getTimeInMillis());
+		return (double)calMillis / 1000 / 60 / 60 / 24;
 	}
 
 	// initializes the calculation objects in a manner specific to this app
