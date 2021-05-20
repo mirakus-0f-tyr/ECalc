@@ -51,11 +51,13 @@ public class Calculation
 	// H Chamber
 	final double HST_A = 7.2954;
 	final double HST_B = 0.004293;
+	final double HLT_A = 0.60795;
+	final double HLT_B = 0.000358;
 	final double H_G = 0.07;
 
 	// inherent voltage drop per electret type
 	final double ST_VDROP_CF = 0.066667;
-	final double MT_VDROP_CF = 0.066667; // merge with changes on other computer to add MT support
+	final double MT_VDROP_CF = 0.066667;
 	final double LT_VDROP_CF = 0.022223;
 
 	int startVolts, endVolts;
@@ -103,6 +105,10 @@ public class Calculation
 
 			case HST:
 			cf = HST_A + HST_B * (startVolts + endVolts) / 2;
+			break;
+
+			case HLT:
+			cf = HLT_A + HLT_B * (startVolts + endVolts) / 2;
 			break;
 
 			default:
@@ -241,8 +247,9 @@ public class Calculation
 			RnC = (((startVolts - endVolts) - (ST_VDROP_CF * duration)) / (cf * duration)) - (background * H_G);
 			break;
 
-			// add MT support
-			// add HLT support
+			case HLT:
+			RnC = (((startVolts - endVolts) - (LT_VDROP_CF * duration)) / (cf * duration)) - (background * H_G);
+			break;
 
 			default: 
 			break;
