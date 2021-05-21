@@ -12,6 +12,7 @@ import java.lang.CharSequence;
 import java.lang.Integer;
 import java.lang.Double;
 import java.lang.Math;
+import java.text.DecimalFormat;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -350,6 +351,40 @@ public class ECalc extends Activity
 		ev1.setText(null);
 		ev2.setText(null);
 		elevEdit.setText(null);
+	}
+
+	public void OnSIUnitsCheckboxClicked(View v)
+	{
+		Toast unitTypeNotifier;
+		double elevation;
+		double gamma;
+		DecimalFormat roundedElevationFormat = new DecimalFormat("0");
+
+		if (selectSIUnitsCheckBox.isChecked())
+		{
+			// if elevation not empty, assume entry is in feet and convert to meters
+			if (elevEdit.getText().toString().trim().length() > 0)
+			{
+				// convert feet to meters
+				elevation = Double.parseDouble(elevEdit.getText().toString().trim()) * .3048;
+				elevEdit.setText(roundedElevationFormat.format(elevation));
+			}
+
+			unitTypeNotifier = Toast.makeText(context, "Expecting meters and nGy/hr", toastDuration);
+			unitTypeNotifier.show();
+		}
+		else
+		{
+			if (elevEdit.getText().toString().trim().length() > 0)
+			{
+				// convert meters to feet
+				elevation = Double.parseDouble(elevEdit.getText().toString().trim()) / .3048;
+				elevEdit.setText(roundedElevationFormat.format(elevation));
+			}
+
+			unitTypeNotifier = Toast.makeText(context, "Expecting feet and uR/hr", toastDuration);
+			unitTypeNotifier.show();
+		}
 	}
 
 	// method converts difference in dates/times into a floating format expected by calculation code

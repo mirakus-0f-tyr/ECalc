@@ -145,7 +145,8 @@
 	android:layout_height="wrap_content"
 	android:text="Use SI Units"
 	android:layout_x="140dp"
-	android:layout_y="112dp" />
+	android:layout_y="112dp"
+	android:onClick="OnSIUnitsCheckboxClicked" />
 <Button
 	android:id="@+id/calculate_button"
 	android:layout_width="108dp"
