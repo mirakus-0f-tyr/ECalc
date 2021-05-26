@@ -473,6 +473,7 @@ public class ECalc extends Activity
 
 			case 3:
 			detector.config = Configuration.LMT_OO;
+			break;
 
 			case 4:
 			detector.config = Configuration.LLT_OO;

@@ -98,6 +98,7 @@ public class Calculation
 
 			case LMT_OO:
 			cf = LMT_OO_A + LMT_OO_B * Math.log((startVolts + endVolts) / 2);
+			break;
 
 			case LLT_OO:
 			cf = LLT_OO_A + LLT_OO_B * Math.log((startVolts + endVolts) / 2);
